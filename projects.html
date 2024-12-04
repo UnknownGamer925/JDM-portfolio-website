@@ -10,22 +10,30 @@
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px}
+@media (min-resolution: 1dpi) { 
+  html {
+    zoom: 1.61;
+  }
+}
 </style>
 </head>
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-purple w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <img src="/assets/logo.png" style="width: 75%; padding-left: 25%; padding-top: 10%;" onclick="onClick(this)" alt="Brand logo">
-    <h3 style="padding-bottom: 10%; padding-top: 5%; text-align: center;"><b>Joe Mcdonnell<br>(JDMdev)</b></h3>
+    <div style="padding-left: 25%; padding-top: 10%;">
+      <img src="/assets/logo-square.png" style="width: 65%; border-radius: 10px;" onclick="onClick(this)" alt="Brand logo">
+    </div>
+    <h3 style="padding-bottom: 15%; padding-top: 5%; text-align: center;"><b>Joe Mcdonnell<br>(JDMdev)</b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Portfolio</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CV</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Portfolio</a> 
+    <a href="devlogs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Devlogs</a>
+    <a href="cv.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CV</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> 
   </div>
 </nav>
 
@@ -42,29 +50,41 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
+  <div class="w3-container" style="margin-top:20px" id="showcase">
     <h1 class="w3-jumbo"><b>Projects</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr style="width:50px;border:5px solid #9c27b0" class="w3-round">
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
-    <div style=" padding-bottom: 20%;">
-      <img src="/assets/temp.jpg" style="width:35%; float: left;" alt="Concrete meets bricks">
-      <p style="padding-top: 5%; padding-bottom: 5%; padding-left: 40%; text-align: left;">Lorem ipsum my ass Lorem ipsum my ass Lorem ipsum my ass Lorem ipsum my ass Lorem ipsum my ass Lorem ipsum my ass gg Lorem ipsum my ass</p>
+    <div style=" padding-bottom: 10%;">
+      <img src="/assets/PotionProf.png" style="width:30%; float: left;" alt="Concrete meets bricks">
+      <h3 style="padding-left: 33%; text-align: left;">Potion Profiteer</h3>
+      <p style="padding-left: 33%; text-align: left; font-size: large;">Time Scale: <i>4 months</i><br>Group Size: <i>7</i><br>Languages: <i>C#</i><br>Software: <i>Unity, Visual Studio</i><br>Project Type: <i>University</i><br><br>1 of 3 programmers, contributed various components such as inventory management + UI, resource collection, resource pooling, npc movement and world design.</p>
     </div>
     
-    <div style=" padding-bottom: 20%;">
-      <img src="/assets/temp.jpg" style="width:35%; padding-bottom: 10%; float: right;" alt="Concrete meets bricks">
-      <p style="padding-top: 5%; padding-bottom: 5%; padding-right: 40%; text-align: right;">Lorem ipsum my ass Lorem ipsum my ass Lorem ipsum my ass Lorem ipsum my ass Lorem ipsum my ass Lorem ipsum my ass gg Lorem ipsum my ass</p>
+    <div style=" padding-bottom: 10%;">
+      <img src="/assets/StandUpSim.png" style="width:30%; padding-bottom: 10%; float: right;" alt="Concrete meets bricks">
+      <h3 style="padding-right: 33%; text-align: left; text-align: right;">Stand-Up Simulator</h3>
+      <p style="padding-right: 33%; text-align: right; font-size: large;">Time Scale: <i>1 week</i><br>Group Size: <i>4</i><br>Languages: <i>C#</i><br>Software: <i>Unity, Visual Studio</i><br>Project Type: <i>Personal</i><br><br>Group entry to the Global Game Jam 2024. 1 of 2 programmers, responsible for handling the immersive audiance interaction animations, Callouts, Spotlight effect and scene transitions (tho due to time constraints these did not make it to the final build).</p>
+    </div>
+
+    <div style=" padding-bottom: 10%;">
+      <img src="/assets/PotionProf.png" style="width:30%; float: left;" alt="Concrete meets bricks">
+      <h3 style="padding-left: 33%; text-align: left;">Van Hellsing</h3>
+      <p style="padding-left: 33%; text-align: left; font-size: large;">Time Scale: <i>1 week</i><br>Group Size: <i>4</i><br>Languages: <i>C#</i><br>Software: <i>Unity, Visual Studio</i><br>Project Type: <i>Personal</i><br><br>1 of 3 programmers, contributed various components such as inventory management + UI, resource collection, resource pooling, npc movement and world design.</p>
     </div>
   </div>
+  <div class="w3-container">
+    <hr style="width:50px;border:5px solid #9c27b0" class="w3-round">
+  </div>
+  
 
 <!-- End page content -->
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:36px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
 <script>
 // Script to open and close sidebar
