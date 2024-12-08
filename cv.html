@@ -13,14 +13,28 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 .button1 {border: 4px solid #9c27b0; background-color: #9c27b0; color: white; padding: 12px 24px; text-align: center; text-decoration: none; display: inline-block; font-size: 18px; border-radius: 8px; transition-duration: 0.2s;}
 .button1:hover {background-color: white; color: black; cursor: pointer}
-@media screen and (min-resolution: 1dpi) { 
+@media (min-width: 1024px) {
+  html {
+    zoom: 1.06;
+  }
+  .font1 {
+    font-size: 1vw;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1600px) { 
+  html {
+    zoom: 1.06;
+  }
+  .font1 {
+    font-size: 1.1vw;
+  }
+}
+@media (min-width: 1600px) { 
   html {
     zoom: 1.61;
   }
-}
-@media screen and (max-width: 1280px) { 
-  html {
-    zoom: 1.02;
+  .font1 {
+    font-size: 0.7vw;
   }
 }
 </style>

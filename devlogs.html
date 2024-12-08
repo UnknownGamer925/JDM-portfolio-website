@@ -11,14 +11,28 @@ body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
-@media screen and (min-resolution: 1dpi) { 
+@media (min-width: 1024px) {
+  html {
+    zoom: 1.06;
+  }
+  .font1 {
+    font-size: 1vw;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1600px) { 
+  html {
+    zoom: 1.06;
+  }
+  .font1 {
+    font-size: 1.1vw;
+  }
+}
+@media (min-width: 1600px) { 
   html {
     zoom: 1.61;
   }
-}
-@media screen and (max-width: 1280px) { 
-  html {
-    zoom: 1.02;
+  .font1 {
+    font-size: 0.7vw;
   }
 }
 </style>
